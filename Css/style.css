@@ -1,0 +1,270 @@
+body {
+    font-family: 'Anton', 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+*{ /*Универсальный селектор*/
+
+    padding:0; 
+    box-sizing: border-box;
+    margin:0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #EDA823 ;
+    margin: auto 0;
+}
+
+.logo {
+    width: 65.86px;
+    height:36px ;
+}
+
+.frontlogo {
+
+}
+
+header a {
+    font-weight: bold;
+    color: #000;
+}
+
+.top, .menu, ul, li {
+    display: flex; /*Выравнивание по центру для блоков */
+     
+     align-items: center;
+}
+
+.menu, ul, li, a {
+    text-transform: uppercase; /*текст заглавными бувками*/
+    text-decoration: none; /*Убирает подчеркивание ссылки*/
+    tab-size: 18px;
+    margin-right: 20px;
+}
+
+.first {
+    margin-right: 620px;
+}
+
+.trust {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-right: 40px;
+    align-items: center;
+    width: 84.81px;
+    box-sizing: border-box;
+    background: rgba(255,94,0,1);
+    background: -moz-linear-gradient(left, rgba(255,94,0,1) 0%, rgba(197,8,8,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,94,0,1)), color-stop(100%, rgba(197,8,8,1)));
+    background: -webkit-linear-gradient(left, rgba(255,94,0,1) 0%, rgba(197,8,8,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,94,0,1) 0%, rgba(197,8,8,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,94,0,1) 0%, rgba(197,8,8,1) 100%);
+    background: linear-gradient(to right, rgba(255,94,0,1) 0%, rgba(197,8,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e00', endColorstr='#c50808', GradientType=1 );
+    
+}
+
+
+
+.logo {
+    margin-right: 41px;
+}
+
+.mainpicture {
+    position:fixed; /* Когда страницу прокручивают, фиксированный элемент остаётся на своём месте и не прокручивается вместе со страницей. */
+    z-index: -1; /* Я упоминал, что вы можете использоватьz-indexсвойство для управления позиционированием элементов по оси Z. */
+    top:0; /*  */
+    left:0;  /*  */
+    min-width:100%; /* min-width:100% гарантирует, что ширина элемента не меньше ширины его контейнера. width: auto позволяет элементу сохранять свой первоначальный размер. */
+    min-height:100%; /*  */
+}
+
+.table {
+    color: #FFF;
+    font-family: 'Montserrat';
+}
+
+.table h1{
+    color: #FFF;
+    width: 511px;
+    margin-top: 241px;
+    
+    font-size: 32px;
+}
+
+
+.btn {
+    margin-top: 60px;
+}
+
+ .button1 {
+    margin-top: 60px;
+    
+    font-size: 18px;
+    background: #FF8A00;
+    color: #FFF;
+    width: 385px;
+    text-align: center;
+    padding: 17px 113px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+
+.button1:hover {
+    background: #ab8b0b;
+}
+
+.answer {
+    margin-top: 60px;
+}
+
+.answer a {
+    color: #FFF;
+    font-size: 18px;
+    width: 129px;
+    background: #FF8A00;
+    border-radius: 20px;
+    padding: 7px 13px;
+}
+
+.answer a:hover {
+    background: #ab8b0b;
+}
+
+.form, input, form{
+    display: block;
+    box-sizing: border-box;
+}
+
+.con2 {
+    margin-top: 334px ;
+    background-color: #FAC26E;
+    width: 100%;
+    
+    
+}
+
+
+
+ .form, .point1, .point2, .point3, .point4, .regist {
+   
+    margin-right: auto; 
+	margin-left: auto;
+    display: block;
+    width: 380px;
+    
+    margin-bottom: 23px;
+    padding: 14px 0 14px 14px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.form, .point1 {
+    margin-top: 136px;
+}
+
+
+.regist {
+    background: #FF8A00;
+    border-radius: 20px;
+    align-items:  center;
+    padding: 14px 80px ;
+    margin-bottom: 0;
+    
+}
+
+.form, .regist {
+    margin-bottom: 0;
+}
+
+.regist {
+    margin-bottom: 77px;
+}
+
+.regist:hover {
+    background: #ab8b0b;
+}
+
+
+.footer {  
+    width: 100%;
+    background: #ED8C32;
+    margin: 0;
+}
+
+
+.copy, p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    font-family: 'Montserrat';
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    
+    width: auto;
+    
+}
+
+
+
+
+/*Responsive*/
+ 
+/*992px - 1200px*/
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+  
+}
+
+
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+    
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+}
+
+/*0px - 576px*/
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+          /* overflow:hidden;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        */ 
+    }
+
+}
+
+
